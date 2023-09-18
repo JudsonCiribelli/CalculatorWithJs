@@ -2,20 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto Prático Guiado 1</title>
     <link rel="stylesheet" href="./CSS/style.css" />
     <script src="./script.js" defer></script>
-    <title>Calculadora utilizando JavaScript</title>
   </head>
   <body>
     <main data-theme="dark">
       <header class="flex align-center justify-between">
         <h1>Calc.js</h1>
-        <button id="themeSwitcher">Mudar tema Escuro/Claro</button>
+        <button id="themeSwitcher">Alterar tema Escuro/Claro</button>
       </header>
       <input type="text" id="input" />
-      <div id="Keys">
-        <button id="Clear">C</button>
+      <div id="keys">
+        <button id="clear">C</button>
         <button class="charKey" data-value=" ( ">(</button>
         <button class="charKey" data-value=" ) ">)</button>
         <button class="charKey" data-value=" / ">/</button>
@@ -34,11 +41,11 @@
         <button class="charKey" data-value="0">0</button>
         <button class="charKey" data-value=".">.</button>
         <button class="charKey" data-value=" % ">mod</button>
-        <button class="charKey" id="equal">=</button>
+        <button id="equal">=</button>
       </div>
       <section class="flex align-center justify-between">
         <button id="copyToClipboard">Copy</button>
-        <input type="text" id="input" disabled />
+        <input type="text" id="result" disabled />
       </section>
     </main>
   </body>
